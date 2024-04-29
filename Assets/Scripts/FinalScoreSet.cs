@@ -25,6 +25,9 @@ public class FinalScoreSet : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+
+        //calculating the score
+        ScoreManager.score = ((ScoreManager.hostagesSaved * 100) + (ScoreManager.hostagesDeadByYou * 150) - (ScoreManager.hostagesDeadByMonster * 50) + ScoreManager.timer);
     }
 
     // Update is called once per frame

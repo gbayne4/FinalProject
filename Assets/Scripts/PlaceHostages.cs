@@ -12,16 +12,16 @@ public class PlaceHostages : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScoreManager.hostages = HostageNumTimesFive * 5;
+        ScoreManager.hostages = HostageNumTimesFive * 5 + 1;
         //generating the hostages throughout the map
         for (int i = 0; i < HostageNumTimesFive; i++)
         {
             //number is based on platform, lmk if theres an easier way to do this.
-            Instantiate(hostage1, new Vector3(Random.Range(0, 245), 1, Random.Range(0, 245)), Quaternion.identity);
-            Instantiate(hostage2, new Vector3(Random.Range(0, 245), 1, Random.Range(0, 245)), Quaternion.identity);
-            Instantiate(hostage3, new Vector3(Random.Range(0, 245), 1, Random.Range(0, 245)), Quaternion.identity);
-            Instantiate(hostage4, new Vector3(Random.Range(0, 245), 1, Random.Range(0, 245)), Quaternion.identity);
-            Instantiate(hostage5, new Vector3(Random.Range(0, 245), 1, Random.Range(0, 245)), Quaternion.identity);
+            Instantiate(hostage1, new Vector3(Random.Range(0, 143), 1, Random.Range(0, 245)), Quaternion.identity);
+            Instantiate(hostage2, new Vector3(Random.Range(0, 143), 1, Random.Range(0, 245)), Quaternion.identity);
+            Instantiate(hostage3, new Vector3(Random.Range(0, 143), 1, Random.Range(0, 245)), Quaternion.identity);
+            Instantiate(hostage4, new Vector3(Random.Range(0, 143), 1, Random.Range(0, 245)), Quaternion.identity);
+            Instantiate(hostage5, new Vector3(Random.Range(0, 143), 1, Random.Range(0, 245)), Quaternion.identity);
 
         }
 

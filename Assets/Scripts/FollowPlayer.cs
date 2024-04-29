@@ -52,6 +52,7 @@ public class FollowPlayer : MonoBehaviour
 
         if ((collision.gameObject.tag == "Monster") && !dead)
         {
+            Debug.Log("hit by monster");
             dead = true;
             Death();
             ScoreManager.hostages -= 1;
